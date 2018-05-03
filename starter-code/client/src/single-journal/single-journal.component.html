@@ -1,0 +1,8 @@
+<p>
+  single-journal works!
+</p>
+<div *ngIf="journal">
+  {{journal.title}}
+  {{journal.date | date: "dd/MM/yyyy"}}
+  {{journal.content}}
+</div>

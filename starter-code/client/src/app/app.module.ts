@@ -8,11 +8,13 @@ import { JournalService } from 'services/journal.service';
 import { EntryListComponent } from '../entry-list/entry-list.component';
 import { RouterModule } from '@angular/router';
 import { JournalRoutes } from "../routes/Journal.routing";
+import { SingleJournalComponent } from '../single-journal/single-journal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EntryListComponent
+    EntryListComponent,
+    SingleJournalComponent
 ],
   imports: [
     BrowserModule,

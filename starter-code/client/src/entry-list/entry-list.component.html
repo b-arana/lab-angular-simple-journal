@@ -4,7 +4,9 @@
 <ul>
   <li *ngFor='let journal of journals'>
     {{journal.title}}
-     {{journal.date}}
-    
+     {{journal.date | date:'dd/MM/yyyy'}}
+    <a [routerLink]='["/journal", journal._id]'>Entry details</a>
   </li>
+ 
 </ul>
+

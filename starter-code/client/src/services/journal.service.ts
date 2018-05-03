@@ -14,6 +14,9 @@ getList(){
     return this.http.get(`${this.BASE_URL}/api/journal-entries`)
     .map((res)=> res.json())             // convertir el string en un objeto => map
 }
-
+getJournal(id){
+    return this.http.get(`${this.BASE_URL}/api/journal-entries/${id}`)
+    .map((res) => res.json())             // convertir el string en un objeto => map
+}
 
 }
